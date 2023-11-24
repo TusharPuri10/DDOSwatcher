@@ -1,8 +1,7 @@
 from scapy.layers.inet import IP, TCP
+
 from .context.packet_direction import PacketDirection
 from .packet_time import PacketTime
-import logging
-
 
 
 class FlowBytes:
@@ -264,29 +263,16 @@ class FlowBytes:
                 )
         return 0
 
-
-def get_bulk_rate(self, packet_direction):
-    try:
+    def get_bulk_rate(self, packet_direction):
         if packet_direction == PacketDirection.FORWARD:
-            if (
-                self.feature.forward_bulk_count != 0
-                and self.feature.forward_bulk_duration != 0
-            ):
+            if self.feature.forward_bulk_count != 0:
                 return (
                     self.feature.forward_bulk_size / self.feature.forward_bulk_duration
                 )
         else:
-            if (
-                self.feature.backward_bulk_count != 0
-                and self.feature.backward_bulk_duration != 0
-            ):
+            if self.feature.backward_bulk_count != 0:
                 return (
-                    self.feature.backward_bulk_size / self.feature.backward_bulk_duration
+                    self.feature.backward_bulk_size
+                    / self.feature.backward_bulk_duration
                 )
-    except ZeroDivisionError as e:
-        # Log a message with details of the exception
-        logging.error(f"ZeroDivisionError in get_bulk_rate: {str(e)}")
         return 0
-
-    return 0
-
