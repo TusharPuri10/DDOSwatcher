@@ -15,7 +15,7 @@ export default function Footer() {
             }}
         >
             <Typography variant="h6" align="center" gutterBottom color="white">
-                CYBERHQ
+                DDoS WATCHER
             </Typography>
 
             <Box display="flex" justifyContent="center" m={1} p={1}>
@@ -36,7 +36,7 @@ export default function Footer() {
                             backgroundColor: "white",
                         },
                     }}
-                    href="https://github.com/itsvishwasmalik"
+                    href="https://github.com/TusharPuri10/DDOSwatcher"
                     target="_blank"
                     rel="noopener"
                     startIcon={<GitHub />}

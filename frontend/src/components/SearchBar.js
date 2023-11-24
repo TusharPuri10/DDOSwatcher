@@ -170,7 +170,7 @@ const SearchBar = () => {
                 </IconButton>
                 <p>Mode</p>
             </MenuItem>
-            <MenuItem>
+            {/* <MenuItem>
                 <Link
                     to={`/cart`}
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -198,7 +198,7 @@ const SearchBar = () => {
                     <AccountCircle />
                 </IconButton>
                 <p>Profile</p>
-            </MenuItem>
+            </MenuItem> */}
         </Menu>
     );
 
@@ -229,7 +229,7 @@ const SearchBar = () => {
                             color: "inherit",
                         }}
                     >
-                        CYBERHQ
+                        DDoS WATCHER
                     </Typography>
                     {/* <Search>
                         <SearchIconWrapper>
@@ -298,7 +298,7 @@ const SearchBar = () => {
                 </Toolbar>
             </AppBar>
             {renderMobileMenu}
-            {renderMenu}
+            {/* {renderMenu} */}
         </Box>
     );
 };
