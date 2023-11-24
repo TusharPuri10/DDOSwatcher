@@ -2,6 +2,7 @@ import { Box, Button, Grid } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import illustration from "../../assets/illustration.png";
+import bgimg from "../../assets/ddos-attack.png";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const Home = () => {
@@ -59,7 +60,8 @@ const Home = () => {
                 </div>
             </Box>
             <Box sx={{ width:'50%', display:'flex', justifyContent:'center', alignItems:"center", bgcolor: "#081c15"}}>
-                <img src={illustration} />
+                {/* <img src={bgimg} /> */}
+                <img src={bgimg} style={{width: '100%', height: 'auto'}} />
             </Box>
         </Box>
     );
