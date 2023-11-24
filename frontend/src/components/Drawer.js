@@ -54,7 +54,7 @@ const Drawer = ({ open, onClose }) => {
                         p: 2,
                     }}
                 >
-                    CARTIFY
+                    DDoS WATCHER
                 </Typography>
                 <IconButton
                     size="small"
@@ -85,20 +85,12 @@ export const mainListItems = (
                 <ListItemText primary="Home" />
             </ListItem>
         </Link>
-        <Link to={`/cart`} style={{ textDecoration: "none", color: "inherit" }}>
-            <ListItem button>
-                <ListItemIcon>
-                    <ShoppingCartIcon />
-                </ListItemIcon>
-                <ListItemText primary="Orders" />
-            </ListItem>
-        </Link>
         <Link to={`/user`} style={{ textDecoration: "none", color: "inherit" }}>
             <ListItem button>
                 <ListItemIcon>
                     <PeopleIcon />
                 </ListItemIcon>
-                <ListItemText primary="Account" />
+                <ListItemText primary="Developers" />
             </ListItem>
         </Link>
     </Box>
