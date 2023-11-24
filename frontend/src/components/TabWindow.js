@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AppBar, Tabs, Tab, Box } from "@mui/material";
 import Home from "../pages/Home";
 import Analyse from "../pages/Analyse";
+import About from "../pages/About";
 
 const tabStyle = {
     minWidth: { sm: 160 },
@@ -55,6 +56,7 @@ const TabWindow = () => {
                 >
                     <Tab label="Home" value={0} sx={tabStyle} />
                     <Tab label="DDoS Analyser" value={1} sx={tabStyle} />
+                    <Tab label="About" value={2} sx={tabStyle} />
                 </Tabs>
             </AppBar>
 
@@ -64,6 +66,9 @@ const TabWindow = () => {
                 </TabPanel>
                 <TabPanel value={tabIndex} index={1}>
                     <Analyse />
+                </TabPanel>
+                <TabPanel value={tabIndex} index={2}>
+                    <About/>
                 </TabPanel>
             </Box>
         </Box>
