@@ -1,6 +1,8 @@
 import Home from "../Home";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
+import TabWindow from "../components/TabWindow";
+import Analyse from "../pages/Analyse";
 import User from "../pages/User";
 import NotFound from "../utils/NotFound";
 
@@ -19,6 +21,17 @@ const HomeRoute = {
             element: <Home />,
         },
     ],
+};
+
+const AnalyseRoute = {
+    path: "/analyse",
+    element: (
+        <>
+            <SearchBar />
+            <Analyse />
+            <Footer />
+        </>
+    ),
 };
 
 const CartRoute = {
@@ -69,6 +82,7 @@ const HomeRoutes = [
     CheckoutRoute,
     UserRoute,
     NotFoundRoute,
+    AnalyseRoute,
 ];
 
 export default HomeRoutes;
