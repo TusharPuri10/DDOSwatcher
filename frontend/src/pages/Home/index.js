@@ -4,6 +4,7 @@ import axios from "axios";
 import illustration from "../../assets/illustration.png";
 import bgimg from "../../assets/ddos-attack.png";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -13,9 +14,9 @@ const Home = () => {
                 style={{
                     display: 'flex',
                     flexWrap: 'wrap',
-                    justifyContent: 'space-between',
+                    justifyContent: 'center',
                     backgroundColor: '#b7e4c7',
-                    height: '60vh',
+                    height: '50vh',
                 }}
                 >
                 <div style={{ flex: '1', padding: '0 8px' }}>
@@ -24,37 +25,33 @@ const Home = () => {
                         textAlign: 'center',
                         maxWidth: '780px',
                         margin: '0 auto',
+                        display:"flex",
+                        justifyContent:"center",
+                        flexDirection:"column",
+                        alignItems:"center",
                     }}
                     >
                     <h1
                         style={{
-                        marginBottom: '8px',
-                        fontSize: '24px',
+                        marginBottom: '0px',
+                        fontSize: '40px',
                         fontWeight: 'bold',
                         color: '#000',
+                        fontFamily: 'sans-serif',
                         }}
                     >
-                        Do You Want to Empower Your Brand and Get More Traffic?
+                        DDoS Watcher
                     </h1>
                     <p
                         style={{
                         maxWidth: '600px',
                         marginBottom: '10px',
-                        fontSize: '16px',
-                        color: '#707070',
+                        fontSize: '20px',
+                        color: '#808080',
                         }}
                     >
-                        Quality Never Happens by Accident. It’s always the outcome of deliberate effort. We produce a remarkably rich online experience. Our growth strategies will spark your brand’s and business’s traffic and revenue.
+                        The DDoS Watcher stands as a formidable shield against Distributed Denial of Service (DDoS) attacks, leveraging advanced machine learning algorithms for robust analysis. Each algorithm employed serves a distinct purpose, enhancing the application's ability to discern intricate patterns within the data.
                     </p>
-                    <Button 
-                        variant="contained"
-                        size="large" 
-                        sx={{ color:"#fff", marginTop:"100px", bgcolor:"#081c15" }} 
-                        // onClick={()=>()}
-                    >
-                        <text sx={{fontWeight:"bold"}}>Analyse Now</text>
-                        <OpenInNewIcon sx={{marginX:"7px",color:"#fff" }}/>
-                    </Button>
                     </div>
                 </div>
                 </div>

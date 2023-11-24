@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import ReactApexChart from 'react-apexcharts';
-
+import illustration from "../../assets/illustration.png";
 class Analyse extends React.Component {
     constructor(props) {
         super(props);
@@ -101,8 +101,13 @@ class Analyse extends React.Component {
     render() {
         return (
             <Box sx={{ margin: 0, padding: 0, display: 'flex', flexDirection:'column' }}>
-                <div id="chart">
-                    <ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
+                <div style={{width:"100%",display:"flex",flexDirection:'row'}}>
+                    <div id="chart" style={{width: "60%"}}>
+                        <ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
+                    </div>
+                    <div style={{width: "40%",display:'flex', justifyContent:'center', alignItems:"center", bgcolor: "#081c15"}}>
+                        <img src={illustration} style={{width: '100%', height: 'auto'}} />
+                    </div>
                 </div>
                 <TableContainer style={{ maxHeight: 450, overflow: 'auto' }}>
                     <Table>
